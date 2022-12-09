@@ -1,0 +1,81 @@
+.login-container {
+    background-color: white;
+    max-width: 100vw;
+    min-height: 100vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: auto;
+}
+
+.login-container button {
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.amazon-logo {
+    margin: auto;
+    width: 110px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    padding: 5px;
+}
+
+.amazon-logo:hover {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.login-form-container {
+    max-width: 320px;
+    /* min-height: 350px; */
+    /* border: 1px solid red; */
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.login-form-redirect-btn {
+    min-width: 320px;
+    padding:5px;
+    border: 0.5px solid grey;
+}
+
+.login-form {
+    padding: 20px;
+    border: 0.5px solid lightgray;
+    border-radius: 5px;
+}
+
+.login-form>form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login-form>p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.login-form>form>button {
+    margin-top: 10px;
+    padding: 5px;
+    border: 0.5px solid lightgrey;
+    background-color: var(--amazon-orange);
+}
+
+.login-form>form>input {
+    padding: 5px;
+    border: 0.5px solid grey;
+    outline: none;
+}
+
+.login-form>form>strong {
+    font-size: 12px;
+}

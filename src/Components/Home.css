@@ -1,0 +1,11 @@
+.home-product-container {
+    display: flex;
+    z-index:1;
+    margin: auto;
+    max-width: 1500px;
+}
+
+.home-container {
+    position: relative;
+    min-height: 100vh;
+}

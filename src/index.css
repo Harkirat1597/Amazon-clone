@@ -1,0 +1,79 @@
+:root {
+  --amazon-orange: #FEBD69;
+  --amazon-dark-blue: #232F3E;
+  --amazon-blue:  #37475A;
+  --amazon-black: #131A22;
+  --orange: orange;
+  --orange-hover: rgba(255, 166, 0, 0.746);
+  --yellow: rgb(231, 208, 0);
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-size: 15px;
+  background-color: #EAEDED;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mr-1 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.mc-1 {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+
+.mr-2 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.mc-2 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+.mr-3 {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.mc-3 {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+
+Link{
+  text-decoration: none;
+}
+
+.main-container {
+  padding-top: 40px;
+}
+
+button {
+  cursor: pointer;
+}
