@@ -27,11 +27,11 @@ const NavbarHidden = () => {
                         ></i> 
                         <span> All </span>
                     </li>
-                    <li className="nav-hidden-list-item">Amazon mini TV</li>
-                    <li className="nav-hidden-list-item">Sell</li>
-                    <li className="nav-hidden-list-item">Best Sellers</li>
-                    <li className="nav-hidden-list-item">Mobiles</li>
-                    <li className="nav-hidden-list-item">Today's Deals</li>
+                    <li className="nav-hidden-list-item to-hide">Amazon mini TV</li>
+                    <li className="nav-hidden-list-item to-hide">Sell</li>
+                    <li className="nav-hidden-list-item ">Best Sellers</li>
+                    <li className="nav-hidden-list-item to-hide">Mobiles</li>
+                    <li className="nav-hidden-list-item ">Today's Deals</li>
                 </ul>
                 <div className="nav-hidden-adv-cont">
                     <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/SingleTitle/CricketNov2022/1ODILIVE/400x39-SWM_1ODI_NP._CB604840209_.jpg" alt="" />

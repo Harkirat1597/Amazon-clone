@@ -40,3 +40,9 @@
     border: 1px solid white;
     border-radius: 5px;
 }
+
+@media only screen and (max-width: 600px) {
+    .to-hide {
+        display: none;
+    }    
+}

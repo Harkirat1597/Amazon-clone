@@ -6,14 +6,13 @@
 }
 
 .checkout-prod img {
-    width: 200px;
+    width: 150px;
     max-height: 150px;
     object-fit: contain;
 }
 
 .checkout-prod>div {
     flex: 1;
-    
 }
 
 .checkout-prod>div>button {

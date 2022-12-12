@@ -1,8 +1,9 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import './Slider.css';
 import { Pagination, Navigation } from "swiper";
 import Product from './Product.js';
 import LoadingCard from './LoadingCard.js';
@@ -33,10 +34,36 @@ const Slider = ({ category }) => {
     return (
         <>
             <Swiper
-                style={{maxWidth: "1500px"}}
-                slidesPerView={5}
-                spaceBetween={30}
-                slidesPerGroup={5}
+                className='swiper-slider'
+                breakpoints={{
+                    // when window width is >= 300px
+                    300: {
+                        slidesPerView: 1,
+                        slidesPerGroup: 1,
+                    },
+                    // when window width is >= 600px
+                    600: {
+                        slidesPerView: 2,
+                        slidesPerGroup: 2,
+                    },
+                    // when window width is >= 750px
+                    750: {
+                        slidesPerView: 3,
+                        slidesPerGroup: 3
+                    },
+                    // when window width is >= 1000px
+                    1000: {
+                        slidesPerView: 4,
+                        slidesPerGroup: 4
+                    },
+                    // when window width is >= 1200px
+                    1200: {
+                        slidesPerView: 5,
+                        slidesPerGroup: 5
+                    },
+                  }}
+                // slidesPerView={5}  
+                // spaceBetween={30}
                 initialSlide={1}
                 loop={true}
                 loopFillGroupWithBlank={false}
@@ -45,7 +72,6 @@ const Slider = ({ category }) => {
                 }}
                 navigation={true}
                 modules={[Pagination, Navigation]}
-                className="mySwiper"
             >
                 {loading ? 
                     Array(10).fill().map((el) => {

@@ -19,12 +19,13 @@
     /* border: 1px solid black; */
     position: relative;
     top: 0;
-    max-width: 70%;
+    max-width: 1500px;
+    min-width: 250px;
     height: auto;
     margin: auto;
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .prod-image {

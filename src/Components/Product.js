@@ -44,7 +44,7 @@ const Product = ({ product, type }) => {
                 <Link to='/showcase' style={{color: "black", textDecoration: "none"}}>
                     <img alt="" src={image} className='mc-2 product-img' />
                 
-                    <div className='product-info mc-2'>
+                    <div className='product-info'>
                         <p>{title}</p>
 
                         {/* <p>{description}</p> */}

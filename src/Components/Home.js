@@ -35,7 +35,7 @@ const Home = () => {
                         <div className='home-product-container' style={{ display: "flex", flexDirection: "column" }}>
                             <h2 className="mr-2" style={{fontWeight: "lighter"}}>{category.category}</h2>
                             <Slider category={category.category} />
-                        </div>
+                        </div> 
                     );
                 })
             }

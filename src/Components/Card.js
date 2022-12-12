@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Card = ({category, image}) => {
 
     return (
-        <div className="card">
+        <div className="card ">
             
             <h2>{category}</h2>
 

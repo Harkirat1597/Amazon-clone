@@ -94,3 +94,14 @@
 .footer-info-container>div>a:hover {
     text-decoration: underline;
 }
+
+.footer-my-tag {
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-info-container {
+        font-size: 12.5px;
+        padding: 15px;
+    }
+}

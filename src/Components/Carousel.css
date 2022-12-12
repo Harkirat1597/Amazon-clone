@@ -25,15 +25,13 @@
 }
 
 .carousel-image {
-    /* width: 90vw; */
-    max-width: 1500px;
     width: 100%;
-    /* height: 100%; */
+    object-fit: contain;
     display: block;
     margin: auto;
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
-    /* max-width: 1500px; */
     z-index: -1;
+    overflow: hidden;
 }
 
 .slide {
