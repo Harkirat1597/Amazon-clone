@@ -3,8 +3,6 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: white;
-    /* min-width: 100px; */
-    /* width: 100%; */
     width: 350px;
     height: 350px;
     margin: 10px;
@@ -28,4 +26,11 @@
 
 .card p {
     font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 90%;
+        height: 90%;
+    }
 }

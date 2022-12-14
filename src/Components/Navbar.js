@@ -30,7 +30,7 @@ const Navbar = () => {
             </div>
 
             {/* Search bar */}
-            <div class="nav-search-container ">
+            <div class="nav-search-container to-hide">
                 <input type="text" className="navbar-search" />
                 <i className="fa-solid fa-magnifying-glass nav-search-icon"></i>
             </div>

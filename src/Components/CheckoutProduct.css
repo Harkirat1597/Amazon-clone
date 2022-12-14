@@ -49,3 +49,10 @@
 .checkout-prod-btn-group>button:hover {
     text-decoration: underline;
 }
+
+@media only screen and (max-width: 600px) {
+    .checkout-prod img {
+        width: 100px;
+        max-height: 100px;
+    }   
+}

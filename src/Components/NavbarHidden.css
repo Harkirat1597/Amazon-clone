@@ -1,8 +1,8 @@
 .nav-hidden {
     position: fixed;
     height: 45px;
-    width: 100vw;
-    min-width: 1000px;
+    width: 100%;
+    /* min-width: 1000px; */
     background-color: var(--amazon-dark-blue);
     box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
     transition: all 0.1s;
