@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
   BrowserRouter,
   Routes,
@@ -7,6 +7,7 @@ import {
 import './App.css';
 import Navbar from './Components/Navbar.js';
 import NavbarHidden from './Components/NavbarHidden';
+import SubNavMobile from './Components/SubNavMobile.js';
 import Home from './Components/Home.js';
 import Login from './Components/Login.js';
 import Signup from './Components/Signup.js';
@@ -34,17 +35,18 @@ const App = () => {
           
           {!LoginFlag && <Navbar />}
           {!LoginFlag && <NavbarHidden />}
+          <SubNavMobile />
 
-            <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route exact path="/checkout" element={<Checkout />} />
-              <Route exact path='/login' element={<Login updateLoginFlag={updateLoginFlag} />} />
-              <Route exact path='/signup' element={<Signup updateLoginFlag={updateLoginFlag} />} />
-              <Route exact path='/showcase' element={<Showcase />} />
-              <Route exact path='/user' element={<User />} />
-              <Route exact path='/wishlist' element={<Wishlist />} />
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/checkout" element={<Checkout />} />
+            <Route exact path='/login' element={<Login updateLoginFlag={updateLoginFlag} />} />
+            <Route exact path='/signup' element={<Signup updateLoginFlag={updateLoginFlag} />} />
+            <Route exact path='/showcase' element={<Showcase />} />
+            <Route exact path='/user' element={<User />} />
+            <Route exact path='/wishlist' element={<Wishlist />} />
 
-            </Routes>
+          </Routes>
           
           {!LoginFlag && <Footer />}
 

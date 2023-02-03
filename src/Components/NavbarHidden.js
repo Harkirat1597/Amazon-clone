@@ -4,9 +4,9 @@ import './NavbarHidden.css';
 const NavbarHidden = () => {
 
     useEffect(() => {
-        var scroll1 = window.pageYOffset;
+        let scroll1 = window.pageYOffset;
         window.onscroll = () => {
-            var scroll2 = window.pageYOffset;
+            let scroll2 = window.pageYOffset;
             if (scroll1 > scroll2) {
                 document.querySelector('.nav-hidden').style.top = "60px";
             } else {

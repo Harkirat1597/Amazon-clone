@@ -49,4 +49,18 @@
     border: 1px solid lightgray;
 }
 
+.nav-logo-shopping-cart {
+    color: white;
+}
+
 /* Media query for ".to-hide" written at NavbarHidden.css */
+@media only screen and (max-width: 600px) {
+    .nav-logo-amazon {
+        width: 70px;
+        /* border: 1px solid white; */
+    }
+
+    .fa-cart-shopping {
+        font-size: 10px;
+    }
+}

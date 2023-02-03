@@ -18,7 +18,7 @@ const Home = () => {
     };
     
     return (
-        <div className="home-container main-container" >
+        <div className="home-container main-container">
 
             <Carousel />
 

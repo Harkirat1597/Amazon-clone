@@ -25,10 +25,14 @@
 
 .carousel-image {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     display: block;
     margin: auto;
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    mask-image: linear-gradient(to bottom, 
+        rgba(0,0,0,1),
+        rgba(0,0,0,1), 
+        rgba(0,0,0,0)
+    );
     z-index: -1;
     overflow: hidden;
 }
@@ -101,5 +105,15 @@
 @media only screen and (max-width: 600px) {
     .carousel-container {
         margin-bottom: -350px;
+    }
+
+    .carousel-button {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .carousel-container {
+        margin-bottom: -400px;
     }
 }

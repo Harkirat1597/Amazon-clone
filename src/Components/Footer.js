@@ -77,7 +77,7 @@ const Footer = () => {
                 <NavIcon />
             </div>
 
-            <div style={{backgroundColor: "var(--amazon-black)", color: "white", display: "flex", justifyContent: "center", alignItems: "center", width: "100%", height: "100px"}}>
+            <div className='footer-my-tag-container' style={{backgroundColor: "var(--amazon-black)", color: "white", display: "flex", justifyContent: "center", alignItems: "center", width: "100%", height: "100px"}}>
                 <p className='footer-my-tag'>This website is developed and maintained by Harkirat Singh</p>
             </div>
         </div>

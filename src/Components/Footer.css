@@ -72,13 +72,14 @@
     color: white;
     display: flex;
     flex-direction: row;
-    width: 850px;
+    max-width: 850px;
     justify-content: space-between;
 }
 
 .footer-info-container>div {
     display: flex;
     flex-direction: column;
+    padding: 5px;
 }
 
 .footer-info-container>div>p {
@@ -103,5 +104,19 @@
     .footer-info-container {
         font-size: 12.5px;
         padding: 15px;
+    }
+
+    .footer-my-tag-container {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .footer-info-container {
+        font-size: 7px;
+    }
+
+    .footer-my-tag {
+        font-size: 7px;
     }
 }

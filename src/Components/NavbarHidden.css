@@ -8,6 +8,7 @@
     transition: all 0.1s;
     padding: 5px;
     z-index: 9;
+    display: block;
 }
 
 .nav-hidden {
@@ -45,4 +46,8 @@
     .to-hide {
         display: none;
     }    
+
+    .nav-hidden {
+        display: none;
+    }
 }

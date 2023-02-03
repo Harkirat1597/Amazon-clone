@@ -61,8 +61,14 @@ const Navbar = () => {
 
                 <Link to="/checkout">
                     <div className="nav-links mr-2">
-                        <p style={{fontWeight: "bolder", justifyContent: "center", alignItems: "center", color: "orange", fontSize: "1.2em", marginLeft: "5px"}}>  {basket.length}  </p>
-                        <i className="fa-solid fa-cart-shopping" style={{color: "white", fontSize: "1.2em"}}></i>
+                        <p 
+                            style={{fontWeight: "bolder", justifyContent: "center", alignItems: "center", color: "orange", fontSize: "1.2em", marginLeft: "5px"}}
+                        >
+                           {basket.length}  
+                        </p>
+                        <i className="fa-solid fa-cart-shopping nav-logo-shopping-cart" 
+                            style={{color: "white", fontSize: "20px"}}
+                        ></i>
                     </div>
                 </Link>
             </div>

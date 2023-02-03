@@ -6,7 +6,8 @@ function NavIcon() {
     <>
       <img 
         src={amazonLogo}
-        style={{cursor: "pointer", width: "150px"}}
+        className="nav-logo-amazon"
+        style={{cursor: "pointer", maxWidth: "150px"}}
       />
     </>
   );
