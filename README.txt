@@ -4,6 +4,6 @@ This website is developed using React Javacript, All the data populated at the f
 This website is fully functional and frontend only.
 
 To see this website in action please visit following Link
-https://jolly-starlight-bdada3.netlify.app/signup
+https://jolly-starlight-bdada3.netlify.app/
 
 Thanks!
