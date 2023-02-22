@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import './Footer.css';
 import { Link } from 'react-router-dom';
 import NavIcon from './NavIcon';
 import MainContext from '../Context/Main/MainContext.js';

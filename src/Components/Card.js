@@ -1,12 +1,9 @@
 import React from 'react';
-import './Card.css';
 import { Link } from 'react-router-dom';
 
 const Card = ({category, image}) => {
-
     return (
         <div className="card ">
-            
             <h2>{category}</h2>
 
             <img alt="" src={image} className='mc-2' />
@@ -14,7 +11,6 @@ const Card = ({category, image}) => {
             <Link to='/'>
                 <p> Click here to explore </p>
             </Link>
-
         </div>
     );
 }

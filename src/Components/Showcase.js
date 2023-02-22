@@ -1,5 +1,4 @@
 import React, {useContext, useEffect} from "react";
-import './Showcase.css';
 import ProductContext from "../Context/Product/ProductContext";
 import ProductShowcase from "./ProductShowcase";
 
@@ -19,11 +18,9 @@ const Showcase = () => {
 
     return (
         <div className='showcase-container main-container'>
-
             <ProductShowcase 
                 product={showcaseProduct}
             />
-
         </div>
     );
 }

@@ -7,15 +7,10 @@ const initialStateUser = {
 
 const MainState = (props) => {
     const [isLogin, setIsLogin] = useState(false);
-
     const [user, setUser] = useState(initialStateUser);
-
     const [address, setAddress] = useState([]);
-
     const [basket, setBasket] = useState([]);
-
     const [basketTotal, setBasketTotal] = useState(0);
-
     const [wishlist, setWishlist] = useState([]);
     
     useEffect(() => {

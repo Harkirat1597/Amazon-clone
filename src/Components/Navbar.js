@@ -1,18 +1,14 @@
 import React, {useContext} from 'react';
-import NavIcon from './NavIcon'; 
-import './Navbar.css';
+import NavIcon from './NavIcon';
 import { Link } from "react-router-dom";
 import MainContext from '../Context/Main/MainContext';
 
 const Navbar = () => {
-    
     const mainContext = useContext(MainContext);
-
     const { user, basket, isLogin } = mainContext;
 
     return (
         <nav className="navbar">
-
             {/* Nav logo */}
             <Link to="/">
                 <NavIcon className="nav-logo" />

@@ -1,16 +1,13 @@
 import React, { useState, useContext, useEffect } from 'react';
-import './ProductShowcase.css';
 import MainContext from '../Context/Main/MainContext';
 
 const ProductShowcase = ({ product }) => {
     const { id, title, rating, price, description, category, image } = product;
 
     const mainContext = useContext(MainContext);
-
     const { removeFromBasket, addToBasket, findProduct, findProductWishlist, addToWishlist, removeFromWishlist } = mainContext;
 
     const [flagAddToCart, setFlagAddToCart] = useState(false);
-
     const [flagAddToWishlist, setFlagAddToWishlist] = useState(false);
 
     useEffect(() => {

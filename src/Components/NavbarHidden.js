@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
-import './NavbarHidden.css';
 
 const NavbarHidden = () => {
-
     useEffect(() => {
         let scroll1 = window.pageYOffset;
         window.onscroll = () => {

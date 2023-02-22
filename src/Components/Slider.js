@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import './Slider.css';
 import { Pagination, Navigation } from "swiper";
 import Product from './Product.js';
 import LoadingCard from './LoadingCard.js';
@@ -15,7 +14,7 @@ const Slider = ({ category }) => {
 
     useEffect(() => {
         getProducts(category);        
-    }, []);
+    }, [category]);
 
     const getProducts = async (category) => {
         setLoading(true);
@@ -62,8 +61,6 @@ const Slider = ({ category }) => {
                         slidesPerGroup: 5
                     },
                   }}
-                // slidesPerView={5}  
-                // spaceBetween={30}
                 initialSlide={1}
                 loop={true}
                 loopFillGroupWithBlank={false}

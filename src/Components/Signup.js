@@ -1,11 +1,9 @@
 import React, { useState, useEffect, useRef, useContext } from 'react';
-import './Login.css';
 import { Link, useNavigate } from 'react-router-dom';
 import MainContext from '../Context/Main/MainContext.js';
 
 const Signup = ({ updateLoginFlag }) => {
     const context = useContext(MainContext);
-
     const { createUser } = context;
 
     const navigate = useNavigate();
@@ -19,29 +17,17 @@ const Signup = ({ updateLoginFlag }) => {
 
     useEffect(() => {
         updateLoginFlag(true);
-        
-        // createUserTesting();
 
         return function cleanup() {
             updateLoginFlag(false);
         };
     }, []);
 
-    // For testing purpose
-    // const createUserTesting = () => {
-    //     passwordRef.current.value = "12345";
-    //     confirmPassRef.current.value = "12345";
-    //     emailRef.current.value = "harkirat@gmail.com";
-    //     nameRef.current.value = "Harkirat Singh";
-    //     handleSubmitLogIn();
-    // }
+    const handleSubmitSignUp = (e) => {
+        e.preventDefault();
 
-    const handleSubmitLogIn = () => {
-        // e.preventDefault();
-        
         if (confirmPassRef.current.value !== passwordRef.current.value) {
             setMessage("Password and confirm password do not match");
-            console.log("confirm no")
             return;
         }
 
@@ -61,17 +47,19 @@ const Signup = ({ updateLoginFlag }) => {
             <div className='login-form-container'>
                 <div className='login-form'>
                     <h1>Sign up </h1>
-                    <form onSubmit={handleSubmitLogIn}> 
+    
+                    <form onSubmit={handleSubmitSignUp}> 
                         <strong>Username</strong>
-                        <input ref={nameRef} type='text' />
+                        <input ref={nameRef} type='text' required />
                         <strong>E-mail</strong>
-                        <input ref={emailRef} type='text' />
+                        <input ref={emailRef} type='email' required />
                         <strong>Password</strong>
-                        <input ref={passwordRef} type='password' />
+                        <input ref={passwordRef} type='password' required />
                         <strong>Confirm password</strong>
-                        <input ref={confirmPassRef} type='password' />
+                        <input ref={confirmPassRef} type='password' required />
                         <button type='submit'>Sign Up</button>
                     </form>
+    
                     <p style={{color: "red", fontSize: "12px"}}>{message}</p>
                     <p>By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.</p>
                 </div>

@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import './Login.css';
 import { Link } from 'react-router-dom';
 
 const Login = ({ updateLoginFlag }) => {
@@ -30,12 +29,13 @@ const Login = ({ updateLoginFlag }) => {
                     <h1>Sign in</h1>
                     <form onSubmit={handleSubmitLogIn}> 
                         <strong>E-mail</strong>
-                        <input ref={userRef} type='text' />
+                        <input ref={userRef} type='email' required/>
                         <strong>Password</strong>
-                        <input ref={passwordRef} type='password' />
+                        <input ref={passwordRef} type='password' required/>
                         <button type='submit'>Sign In</button>
                     </form>
                     <p>By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.</p>
+                    <p>Create you account as it a front end only demo application</p>
                 </div>
 
                 <div  className="mc-2" style={{fontSize: "10px"}}>Return to Log in?</div>

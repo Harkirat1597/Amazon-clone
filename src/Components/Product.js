@@ -1,5 +1,4 @@
 import React, { useContext, useState, useEffect } from 'react';
-import './Product.css';
 import { Link } from 'react-router-dom';
 import ProductContext from '../Context/Product/ProductContext';
 import MainContext from '../Context/Main/MainContext.js';

@@ -1,15 +1,10 @@
-import React, { useContext, useEffect } from 'react';
-import './Wishlist.css';
+import React, { useContext } from 'react';
 import MainContext from '../Context/Main/MainContext.js';
 import Product from './Product.js';
 
 const Wishlist = () => {
     const context = useContext(MainContext);
     const { wishlist } = context;
-
-    useEffect(() => {
-        console.log(wishlist);
-    }, []);
 
     return (
         <>

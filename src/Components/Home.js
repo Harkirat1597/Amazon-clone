@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react';
-import './Home.css';
 import Carousel from './Carousel.js';
 import Catagories from '../Data/ProductCatagories.json';
 import Card from './Card.js';

@@ -1,5 +1,4 @@
 import React, { useRef, useContext } from 'react';
-import './User.css'
 import MainContext from '../Context/Main/MainContext.js';
 
 const AddAddress = ({ handleChange }) => {

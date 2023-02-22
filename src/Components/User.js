@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useContext } from 'react';
-import './User.css';
 import { useNavigate, Link } from 'react-router-dom';
 import ChangePassword from './UserChangePassword';
 import AddAddress from './UserAddAddress';

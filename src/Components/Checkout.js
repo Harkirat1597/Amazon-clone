@@ -1,5 +1,4 @@
 import React, { useContext, useEffect } from 'react'
-import './Checkout.css'
 import CheckoutProduct from './CheckoutProduct.js';
 import EmptyCart from './EmptyCart.js';
 import MainContext from '../Context/Main/MainContext';
@@ -39,23 +38,24 @@ const Checkout = ()  => {
           }
           {basket.map((product) => {
             return <CheckoutProduct 
+              key={product.id}
               product={product}
             />
           })}
         </div>
 
         {basket.length !== 0 &&
-        <div className='checkout-cart-footer mc-2' 
-          style={{borderTop: "0.5px solid lightgrey"}}
-        >
-          <p>
-            Subtotal &#40;
-            <span> {basket.length} item </span>
-            &#41; : &#x20B9;
-            <span style={{fontWeight: "bolder", fontSize: "1.5em"}}> {basketTotal.toFixed(2)}</span>
-            .00
-          </p>
-        </div>
+          <div className='checkout-cart-footer mc-2' 
+            style={{borderTop: "0.5px solid lightgrey"}}
+          >
+            <p>
+              Subtotal &#40;
+              <span> {basket.length} item </span>
+              &#41; : &#x20B9;
+              <span style={{fontWeight: "bolder", fontSize: "1.5em"}}> {basketTotal.toFixed(2)}</span>
+              .00
+            </p>
+          </div>
         }
 
       </div>

@@ -1,5 +1,5 @@
 import React, { useState, useRef, useContext } from 'react';
-import './User.css'
+// import './User.css'
 import MainContext from '../Context/Main/MainContext.js';
 
 const ChangePassword = ({ handleChange }) => {
@@ -24,10 +24,9 @@ const ChangePassword = ({ handleChange }) => {
         }
 
         updateUserPassword(newPassRef.current.value);
-
         setMessage("Password changed");
-
         handleChange();
+        return;
     }
 
     return (
@@ -39,7 +38,6 @@ const ChangePassword = ({ handleChange }) => {
                 <p className="mc-2">{message}</p>
                 <button className='mc-2' type="submit">Change password</button>
             </form>
-
         </div>
     )
 }
